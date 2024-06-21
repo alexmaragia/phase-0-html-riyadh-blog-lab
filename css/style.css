@@ -1,86 +1,74 @@
-@import url(http://fonts.googleapis.com/css?family=Gabriela);
-
-html, body {
-  height: 100%;
-  min-height: 100%;
-}
-
+/* style.css */
 body {
-  background: url(../images/backgrounds/architecture.jpg) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
+  max-width: 1200px;
   margin: 0 auto;
-  width: 60%;
-  padding-bottom: 40px;
-}
-
-#content {
   padding: 20px;
-  background: rgba(255,255,255,.85);
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-  font-family: 'Gabriela', serif;
-  color: #fff;
+header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 3.5em;
-  margin-bottom: 0;
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
-h2 {
+header h2 {
   font-size: 1.5em;
-  margin-top: .5em;
+  color: #555;
 }
 
-h3 {
-  font-family: 'Gabriela', serif;
-  font-size: 1.5em;
-  margin-top: .5em;
+section {
+  margin-bottom: 20px;
 }
 
-img {
-  max-width: 100%;
+section img {
   width: 100%;
   height: auto;
+  margin-bottom: 10px;
 }
 
-p {
+section h3 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+section p {
   font-size: 1em;
+  line-height: 1.6;
 }
 
-a {
-  color: black;
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+section ul li a {
+  color: #007bff;
   text-decoration: none;
 }
 
-a:hover {
+section ul li a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 1042px) {
-  .wrapper {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 784px) {
-  body {
-    font-size: 120%;
-  }
-  h1 {
-    font-size: 2.5em;
-  }
-  h2 {
-    font-size: 1em;
-  }
-  .wrapper {
-    width: 95%;
-  }
+/* Bonus: Gradient Background */
+body {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
